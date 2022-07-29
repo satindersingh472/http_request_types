@@ -12,6 +12,7 @@
 <body>
 
     <form>
+        <!-- this form is for post method -->
         <label for="title">title</label>
         <input id="title" type="text" placeholder="what is the title?">
         <label for="body">Status</label>
@@ -21,14 +22,17 @@
         <input id="submit" type="submit" value="post">
     </form>
     <form id="two">
+        <!-- this form is for patch method -->
         <label for="update_title">Change Title</label>
         <input type="text" id="update_title" placeholder="change title">
         <input type="submit" id="post" value="patch">
     </form>
+    <!-- input id delete is for delete method -->
     <input type="submit" id="delete" value="delete">
+    <!-- input id get is for get method -->
     <input type="submit" id="get" value="get">
 
-
+<!-- div id box will contain messages from different success and failure functions  -->
     <div id="box">
 
     </div>
