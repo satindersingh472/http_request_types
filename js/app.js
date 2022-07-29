@@ -19,7 +19,7 @@ function send_post(details) {
     let user_id = document.getElementById(`user_id`);
     let user_id_value = user_id[`value`];
 // post the axios request with various params for the post 
-// post has 
+// post method will add title, user id, body and id to the posts
     axios.request({
         url: `https://jsonplaceholder.typicode.com/posts`,
         method: `POST`,
@@ -30,18 +30,18 @@ function send_post(details) {
         }
     }).then(success_post).catch(failure_post);
 }
-
+// submit button will trigger the send post function because it has event listener attached to it
 let submit = document.getElementById(`submit`);
 submit.addEventListener(`click`, send_post);
-
+// function success patch will give a message if update is successfull via method patch
 function success_patch(response){
     box[`innerHTML`] += `<h2>your update is successful</h2>`;
-s}
- 
+}
+// function failure patch is a fallback function if something went wrong with post request 
 function failure_patch(error){
     box[`innerHTML`] += `<h2>something went wrong with the update</h2>`;
 }
-
+// post request will 
 function post_request(details){
 let title_value = document.getElementById(`update_title`)[`value`];
 
