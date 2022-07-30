@@ -79,7 +79,7 @@ function delete_request(details) {
 let delete_button = document.getElementById(`delete`);
 delete_button.addEventListener(`click`, delete_request);
 // function success get will display a message if get request by axios is fullfilled successfully
-// for loop will loop thru all  the object inside the data array and gives back the title and body 
+// for loop will loop thru all  the object inside the data array and gives back the title and body `
 function success_get(response) {
     box[`innerHTML`] += `<p>below are the examples of some posts with title and body</p>`;
     for (let i = 0; i < response[`data`].length; i++) {

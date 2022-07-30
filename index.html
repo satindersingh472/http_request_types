@@ -10,8 +10,9 @@
 
 </head>
 <body>
+    
 
-    <form>
+    <div>
         <!-- this form is for post method -->
         <label for="title">title</label>
         <input id="title" type="text" placeholder="what is the title?">
@@ -20,23 +21,23 @@
         <label for="user_id"> User ID</label>
         <input type="number" id="user_id" placeholder="your id please"> 
         <input id="submit" type="submit" value="post">
-    </form>
-    <form id="two">
+    </div>
+    <div id="two">
         <!-- this form is for patch method -->
         <label for="update_title">Change Title</label>
         <input type="text" id="update_title" placeholder="change title">
         <input type="submit" id="post" value="patch">
-    </form>
+    </div>
     <!-- input id delete is for delete method -->
     <input type="submit" id="delete" value="delete">
     <!-- input id get is for get method -->
     <input type="submit" id="get" value="get">
 
 <!-- div id box will contain messages from different success and failure functions  -->
-    <div id="box">
+  
+<div id="box">
 
-    </div>
-
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
